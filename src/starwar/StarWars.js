@@ -10,7 +10,7 @@ class StarWars extends Component{
   }
   fetchStarWars=()=>{
     fetch(API)
-    .then(resp=>resp.json)
+    .then(resp=>resp.json())
     .then(data=>this.setState({people:data.results}))
     .catch(err=>console.log(err))
   }
@@ -19,7 +19,7 @@ class StarWars extends Component{
       <>
         <ul>
           {this.state.people && this.state.people.map(ch=>
-            <li key={ch.id}>{ch.name}</li>
+            <li key = {ch.name}>{ch.name}</li>
           )}
         </ul>
       </>
