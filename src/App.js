@@ -55,6 +55,8 @@ class App extends Component{
                 delete = {this.deletePostHandler}
                 update = {this.updatePostHandler}
                 />
+              <hr/>
+              <h3>Output comming from REST API</h3>
               <StarWars/>
             </Container>
       )
